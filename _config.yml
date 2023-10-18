@@ -18,13 +18,15 @@ plugins:
 
 sass:
   style: :compressed
-  load_paths:
-    - _sass
 
 # Exclude
 exclude:
-  - assets/js/bootstrap.bundle.min.js
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
+
+languages: ["en", "ru", "de", "fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: false
